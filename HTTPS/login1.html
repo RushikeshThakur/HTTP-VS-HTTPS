@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>No SSL Certificate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Simple Login Form</h2>
+  <form action="http://127.0.0.1:9090/myapps/action.jsp" method="post">
+    <div class="form-group">
+      <br>
+      <label>Login-Name:</label>
+      <input type="text" name="username" class="form-control item" id="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+      <label>Password:</label>
+      <input type="password" name="password" class="form-control item" id="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label>Email:</label>
+      <input type="email" name="email" class="form-control item" id="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label>Phone Number:</label>
+      <input type="number" name="phone-number" class="form-control item" id="phone-number" placeholder="Phone Number" length=10>
+    </div>
+    <div class="form-group">
+      <label>Date Of Birth:</label>
+      <input type="text" name="birth-date" class="form-control item" id="birth-date" placeholder="Birth Date" size="8">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+</body>
+</html>
